@@ -1,7 +1,8 @@
-/* ustawienia ogolne */
+/* =============== ustawienia ogolne =============== */
 body {
     font-family: "Roboto", "Raleway", sans-serif;
     color: var(--black-text);
+    background-color: var(--body-background);
 }
 :root {
     --body-background: #ffffff;
@@ -11,41 +12,63 @@ body {
     --gery-text: #757575;
     --webstudio-blue: #2196f3;
 }
-.whole-body {
-    position: relative;
-    width: 1600px;
-    height: 2349px;
-    background-color: var(--body-background);
-    color: var(--black-text);
+* {
+    margin: 0px;
 }
-.whole-body-portfolio {
-    background-color: var(--body-background);
-    color: var(--black-text);
-}
-
-/* sekcja head */
-
-.head-header {
-    position: absolute;
-    width: 1600px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
-    background-color: var(--body-background);
-}
-.head-header ul,
-.head-header > ul > li > ul {
+ul,
+ol {
+    padding: 0;
+    margin: 0;
     list-style-type: none;
 }
-/* .thin-line { border-bottom-width: 1px solid #000} */
-.web-studio {
+.list {
+    list-style: none;
+}
+.link {
     text-decoration: none;
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
+}
+.list-flex {
+    display: flex;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    padding: 0;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+    align-items: center;
+}
+.paddings {
+    padding-top: 94px;
+    padding-block: 94px;
+}
+/* ============ sekcja head ============== */
+
+.head-header {
+    background-color: var(--body-background);
+    border-bottom-color: #ececec;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.web-studio-possition {
+    padding-top: 24px;
+    padding-right: 93px;
+    padding-bottom: 25px;
+    padding-left: 215px;
+}
+.web-studio {
     font-family: "Raleway";
     font-style: normal;
     font-size: 26px;
@@ -57,19 +80,14 @@ body {
 .first-logo {
     color: var(--webstudio-blue);
 }
-.head-clickers {
-    display: inline-block;
-    position: absolute;
-    width: 254px;
-    height: 16px;
-    left: 453px;
-    top: 32px;
-}
+
 .head-clickers li {
+    padding-top: 32px;
+    padding-bottom: 32px;
     display: inline-block;
+    padding-right: 46px;
 }
 .head-clickers-inside {
-    text-decoration: none;
     color: var(--black-text);
     font-weight: 500;
     font-size: 14px;
@@ -82,71 +100,54 @@ body {
 }
 
 .contacts {
+    padding-left: 371px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+.contacts li {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 50px;
+}
 .contacts a {
     color: var(--gery-text);
-    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
-.telephone {
-    position: absolute;
-    width: 110px;
-    height: 16px;
-    left: 1263px;
-    top: 32px;
-    color: var(--gery-text);
-}
-.telephone:hover,
-.telephone:focus {
-    color: var(--webstudio-blue);
-}
+.telephone,
 .mail {
-    position: absolute;
-    width: 135px;
-    height: 16px;
-    left: 1078px;
-    top: 32px;
     color: var(--gery-text);
 }
+
+.telephone:hover,
+.telephone:focus,
 .mail:hover,
 .mail:focus {
     color: var(--webstudio-blue);
 }
-/* sekcja slogan */
+
+/* =============== sekcja slogan =============== */
 
 .face-header-slogan {
-    position: absolute;
-    width: 1600px;
+    text-align: center;
     height: 600px;
-    left: 0px;
-    top: 80px;
     background-color: var(--slogan-background);
 }
 .slogan {
-    position: absolute;
-    width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
-
+    padding: 200px 452px 30px 452px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
 
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--body-background);
 }
-.btn-main {
-    position: absolute;
+.button-main {
     width: 200px;
     height: 50px;
     left: 700px;
@@ -166,57 +167,45 @@ body {
 
     cursor: pointer;
 }
-/* sekcja post */
+/* =============== sekcja post =============== */
 
 .post-section {
-    display: inline-block;
-    position: absolute;
-    width: 1170px;
-    height: 101px;
-    left: 215px;
-    top: 774px;
     background-color: var(--body-background);
 }
+.post-list {
+    padding-left: 215px;
+    padding-right: 215px;
+}
+
 .post-section-headers {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    width: 270px;
-    height: 16px;
-    left: 215px;
-    top: 774px;
     color: var(--black-text);
+
+    padding-bottom: 10px;
 }
 .post-section-inside {
-    width: 270px;
-    height: 75px;
-    left: 215px;
-    top: 800px;
-
+    text-align: justify;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--gery-text);
 }
-.post-section li {
-    display: inline-block;
-}
 
-/* sekcja co robimy */
+/* =============== sekcja co robimy =============== */
 
 .what-we-are-doing {
-    position: absolute;
-    width: 1170px;
-    height: 386px;
-    left: 215px;
-    top: 969px;
     background-color: var(--body-background);
 }
-.what-we-are-doing li {
-    display: inline-block;
+.what-we-are-doing ul {
+    padding-top: 50px;
+    padding-bottom: 94px;
+    justify-content: space-around;
 }
+
 .what-we-are-doing-head {
     font-size: 36px;
     line-height: 1.16;
@@ -226,32 +215,23 @@ body {
     color: var(--black-text);
 }
 
-/* sekcja ludzie */
+/* =============== sekcja ludzie =============== */
 
 .people {
-    display: inline-block;
-    position: absolute;
-    width: 1600px;
-    height: 648px;
-    left: 0px;
-    top: 1449px;
     background-color: var(--grey-background);
 }
-.people li {
-    display: inline-block;
+.people ul {
+    justify-content: space-around;
 }
+
 .people-header {
+    padding-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
 }
 .people-box {
-    width: 270px;
-    height: 368px;
-    left: 215px;
-    top: 1635px;
-
     background: #ffffff;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -259,6 +239,7 @@ body {
     border-radius: 0px 0px 4px 4px;
 }
 .people-name {
+    padding-top: 30px;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -269,6 +250,8 @@ body {
 }
 
 .people-function {
+    padding-top: 10px;
+    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -276,19 +259,19 @@ body {
 
     color: var(--gery-text);
 }
-/* stopa */
-.footer-webstudio li {
-    list-style-type: none;
-}
+/* =============== stopa ===============*/
 .footer-webstudio {
-    position: absolute;
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2097px;
-
     background-color: var(--slogan-background);
+    padding-left: 215px;
 }
+.footer-spaces {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-spaces2 {
+    padding-top: 9px;
+}
+
 .web-studio2 {
     font-family: "Raleway";
     font-style: normal;
@@ -297,24 +280,20 @@ body {
 
     letter-spacing: 0.03em;
     color: var(--body-background);
-    text-decoration: none;
 }
-.adress {
-    font-style: normal;
-    width: 246px;
-    height: 21px;
-    left: 215px;
-    top: 2208px;
 
+.adress {
+    padding-top: 20px;
+    font-style: normal;
     font-size: 14px;
     line-height: 2;
 
     color: var(--body-background);
 }
+
 .tel-mail {
     font-size: 14px;
     line-height: 1.71;
-    text-decoration: none;
     letter-spacing: 0.03em;
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
@@ -324,21 +303,17 @@ body {
     color: var(--webstudio-blue);
 }
 
-/* portfolio guziki */
-.buttons-portfolio li {
-    list-style-type: none;
+/* =============== portfolio guziki ===============*/
+.main-section-portfolio ul {
+    padding-left: 215px;
+    padding-right: 215px;
 }
 .buttons-portfolio-type {
-    width: 93px;
-    height: 38px;
-    left: 639px;
-    top: 174px;
+    padding: 6px 22px 6px 22px;
     border: none;
     background: #f5f4fa;
     border-radius: 4px;
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 
     font-family: "Roboto";
@@ -355,31 +330,24 @@ body {
     background-color: var(--webstudio-blue);
     color: var(--body-background);
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .buttons-portfolio {
+    padding-top: 94px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
 }
 
-/* portfolio główna sekcja */
-.main-section-portfolio {
-    position: absolute;
-    width: 1170px;
-    height: 1360px;
-    left: 215px;
-    top: 174px;
+.buttons-portfolio li { padding-right: 8px;
 }
-.portfolio-objects ul {
-    list-style-type: none;
-}
+/* =============== portfolio główna sekcja ===============*/
+
 .portfolio-objects-box {
     display: inline-block;
     box-sizing: border-box;
-    width: 370px;
-    height: 404px;
-    left: 215px;
-    top: 696px;
 
     background: var(--body-background);
     border: 1px solid #eeeeee;

@@ -2,6 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <link
+            rel="stylesheet"
+            href="node_modules/modern-normalize/modern-normalize.css"
+        />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,60 +17,67 @@
     </head>
     <body>
         <header>
-            <div class="thin-line">
-                <nav class="head-header">
-                    <ul>
-                        <li>
-                            <a href="index.html" class="web-studio">
-                                <span class="first-logo">Web</span>Studio
-                            </a>
-                        </li>
-                        <li>
-                            <ul class="head-clickers">
-                                <li>
-                                    <a
-                                        href="/agencja"
-                                        class="head-clickers-inside"
-                                        >Agencja</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="portfolio.html"
-                                        class="head-clickers-inside"
-                                        >Portfolio</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/contact"
-                                        class="head-clickers-inside"
-                                        >Kontakt</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-
-                <ul class="contacts">
-                    <li>
-                        <a href="tel:+48111111111" class="telephone"
-                            >+48 111 111 111</a
-                        >
-                    </li>
-                    <li>
-                        <a href="mailto:info@devstudio.com" class="mail"
-                            >info@devstudio.com</a
-                        >
-                    </li>
-                </ul>
+            <div class="head-header">
+                <div class="container list-flex">
+                    <nav>
+                        <ul class="list list-flex">
+                            <li class="web-studio-possition">
+                                <a href="index.html" class="web-studio link">
+                                    <span class="first-logo">Web</span>Studio
+                                </a>
+                            </li>
+                            <li>
+                                <ul class="head-clickers list list-flex">
+                                    <li>
+                                        <a
+                                            href="/agencja"
+                                            class="head-clickers-inside link"
+                                            >Agencja</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="portfolio.html"
+                                            class="head-clickers-inside link"
+                                            >Portfolio</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/contact"
+                                            class="head-clickers-inside link"
+                                            >Kontakt</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <ul class="contacts list list-flex">
+                            <li>
+                                <a
+                                    href="mailto:info@devstudio.com"
+                                    class="mail link"
+                                    >info@devstudio.com</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="tel:+48111111111"
+                                    class="telephone link"
+                                    >+48 111 111 111</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </header>
         <main>
             <div class="main-section-portfolio">
-                <div>
-                    <ul class="buttons-portfolio">
+                <div class="container">
+                    <ul class="buttons-portfolio list">
                         <li>
                             <button
                                 type="button"
@@ -109,8 +120,8 @@
                         </li>
                     </ul>
                 </div>
-                <article class="portfolio-objects">
-                    <ul>
+                <article class="portfolio-objects ">
+                    <ul class="list container">
                         <li class="portfolio-objects-box">
                             <img
                                 src="images/images2/img-8.jpg"
@@ -216,22 +227,22 @@
             </div>
         </main>
         <footer class="footer-webstudio">
-            <address>
-                <ul>
+            <address class="container">
+                <ul class="list footer-spaces">
                     <li>
-                        <a href="index.html" class="web-studio2">
+                        <a href="index.html" class="web-studio2 link">
                             <span class="first-logo">Web</span>Studio
                         </a>
                     </li>
                     <li class="adress">m. Warszawa, Aleje Jerozolimskie 21</li>
 
-                    <li>
-                        <a href="mailto:info@example.com" class="tel-mail"
+                    <li class="footer-spaces2">
+                        <a href="mailto:info@example.com" class="tel-mail link"
                             >info@example.com</a
                         >
                     </li>
-                    <li>
-                        <a href="tel:+48111111111" class="tel-mail"
+                    <li class="footer-spaces2">
+                        <a href="tel:+48111111111" class="tel-mail link"
                             >+48 111 111 111</a
                         >
                     </li>
