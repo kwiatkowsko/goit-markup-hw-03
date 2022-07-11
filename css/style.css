@@ -1,368 +1,346 @@
-/* =============== ustawienia ogolne =============== */
+/* =============== USTAWIENIA OGOLNE =============== */
+* {
+  margin: 0px;
+}
 body {
-    font-family: "Roboto", "Raleway", sans-serif;
-    color: var(--black-text);
-    background-color: var(--body-background);
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: var(--black-text);
+  background-color: var(--main-white);
 }
 :root {
-    --body-background: #ffffff;
-    --slogan-background: #2f303a;
-    --black-text: #212121;
-    --grey-background: #f5f4fa;
-    --gery-text: #757575;
-    --webstudio-blue: #2196f3;
+  --main-white: #ffffff;
+  --slogan-background: #2f303a;
+  --black-text: #212121;
+  --grey-background: #f5f4fa;
+  --gery-text: #757575;
+  --webstudio-blue: #2196f3;
 }
-* {
-    margin: 0px;
-}
-ul,
-ol {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-.list {
-    list-style: none;
-}
-.link {
-    text-decoration: none;
-}
-.list-flex {
-    display: flex;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0px;
-    padding: 0px;
-}
-
-p {
-    padding: 0;
+a {
+  text-decoration: none;
 }
 
 .container {
-    width: 1600px;
-    margin: 0 auto;
-    align-items: center;
+  width: 1200px;
+  margin: 0 auto;
 }
-.paddings {
-    padding-top: 94px;
-    padding-block: 94px;
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
-/* ============ sekcja head ============== */
-
-.head-header {
-    background-color: var(--body-background);
-    border-bottom-color: #ececec;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+.section {
+  padding-top: 94px;
 }
-.web-studio-possition {
-    padding-top: 24px;
-    padding-right: 93px;
-    padding-bottom: 25px;
-    padding-left: 215px;
+.padding-bottom {
+  padding-bottom: 94px;
 }
-.web-studio {
-    font-family: "Raleway";
-    font-style: normal;
-    font-size: 26px;
-    line-height: 1.19;
-
-    letter-spacing: 0.03em;
-    color: #000;
-}
-.first-logo {
-    color: var(--webstudio-blue);
+.slogan-paddings {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.head-clickers li {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: inline-block;
-    padding-right: 46px;
-}
-.head-clickers-inside {
-    color: var(--black-text);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-.head-clickers-inside:hover,
-.head-clickers-inside:focus {
-    color: var(--webstudio-blue);
+/* ====================== NAGŁÓWKI ================= */
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-white);
 }
 
-.contacts {
-    padding-left: 371px;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-.contacts li {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 50px;
-}
-.contacts a {
-    color: var(--gery-text);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+h2 {
+  padding-right: 93px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+  color: #000;
 }
 
-.telephone,
-.mail {
-    color: var(--gery-text);
+h3 {
+  padding-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--black-text);
+}
+h4 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+
+  color: var(--black-text);
+}
+h5 {
+  padding: 20px 24px 4px 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+
+  letter-spacing: 0.06em;
+
+  color: var(--black-text);
 }
 
-.telephone:hover,
-.telephone:focus,
-.mail:hover,
-.mail:focus {
-    color: var(--webstudio-blue);
+/* ====================== LOGO ================= */
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+  color: #000;
+}
+.logo-blue {
+  color: var(--webstudio-blue);
+}
+.logo-white {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  color: var(--main-white);
+}
+/* ====================== NAWIGACJA ================= */
+
+.navigation-bar {
+  display: flex;
+  align-items: center;
+}
+.bottom-border {
+  border-bottom: 1px solid #ececec;
+}
+.header-bar {
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.head-clickers {
+  display: flex;
+  gap: 30px;
+}
+.head-clickers a {
+  color: var(--black-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.head-clickers a:hover,
+.head-clickers a:focus {
+  color: var(--webstudio-blue);
+}
+.mail-tel {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.mail-tel a {
+  color: var(--gery-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.mail-tel a:hover,
+.mail-tel a:focus {
+  color: var(--webstudio-blue);
 }
 
-/* =============== sekcja slogan =============== */
-
-.face-header-slogan {
-    text-align: center;
-    height: 600px;
-    background-color: var(--slogan-background);
-}
+/* ====================== SLOGAN ================= */
 .slogan {
-    padding: 200px 452px 30px 452px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--body-background);
+  height: 600px;
+  background: var(--slogan-background);
+  display: flex;
+  align-items: center;
 }
-.button-main {
-    width: 200px;
-    height: 50px;
-    left: 700px;
-    top: 430px;
-    border: none;
-
-    background: var(--webstudio-blue);
-    color: var(--body-background);
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1, 87;
-    letter-spacing: 0.06em;
-
-    cursor: pointer;
-}
-/* =============== sekcja post =============== */
-
-.post-section {
-    background-color: var(--body-background);
-}
-.post-list {
-    padding-left: 215px;
-    padding-right: 215px;
+.slogan-paddings {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.post-section-headers {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--black-text);
+.main-button {
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  left: 700px;
+  top: 430px;
+  border: none;
 
-    padding-bottom: 10px;
-}
-.post-section-inside {
-    text-align: justify;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--gery-text);
-}
+  background: var(--webstudio-blue);
+  color: var(--main-white);
 
-/* =============== sekcja co robimy =============== */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
-.what-we-are-doing {
-    background-color: var(--body-background);
-}
-.what-we-are-doing ul {
-    padding-top: 50px;
-    padding-bottom: 94px;
-    justify-content: space-around;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
 }
 
-.what-we-are-doing-head {
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: var(--black-text);
+/* ====================== LOREM IPSUM ================= */
+.lorem-ipsum-section ul {
+  display: flex;
+}
+.lorem-ipsum-section h6 {
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black-text);
+}
+.lorem-ipsum-section p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--gery-text);
 }
 
-/* =============== sekcja ludzie =============== */
+/* ====================== CO ROBIMY ================= */
+.what-we-do li {
+  display: inline-block;
+}
+.what-we-do li:not(:last-child) {
+  padding-right: 30px;
+}
+/* ====================== LUDZIE ================= */
+.our-team {
+  background-color: var(--grey-background);
+}
 
-.people {
-    background-color: var(--grey-background);
-}
-.people ul {
-    justify-content: space-around;
-}
-
-.people-header {
-    padding-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
 .people-box {
-    background: #ffffff;
+  display: inline-block;
+  background: #ffffff;
 
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
-.people-name {
-    padding-top: 30px;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
-    font-weight: 500;
+.our-team p {
+  padding-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    color: var(--black-text);
+  color: var(--gery-text);
 }
+/* ====================== STOPKA ================= */
 
-.people-function {
-    padding-top: 10px;
-    padding-bottom: 30px;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
+.footer-main {
+  background-color: var(--slogan-background);
+}
+address p {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2;
 
-    color: var(--gery-text);
+  color: var(--main-white);
 }
-/* =============== stopa ===============*/
-.footer-webstudio {
-    background-color: var(--slogan-background);
-    padding-left: 215px;
+address ul {
+  padding-bottom: 60px;
 }
-.footer-spaces {
-    padding-top: 60px;
-    padding-bottom: 60px;
+address a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
 }
-.footer-spaces2 {
-    padding-top: 9px;
+address a:hover,
+address a:focus {
+  color: var(--webstudio-blue);
 }
-
-.web-studio2 {
-    font-family: "Raleway";
-    font-style: normal;
-    font-size: 26px;
-    line-height: 1.19;
-
-    letter-spacing: 0.03em;
-    color: var(--body-background);
+.address-padding {
+  padding-top: 9px;
 }
 
-.adress {
-    padding-top: 20px;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 2;
+/* =================== PORTFOLIO ================= 
+====================== PORTFOLIO =================
+====================== PORTFOLIO =================
+====================== PORTFOLIO =================
+====================== PORTFOLIO =================
+====================== PORTFOLIO =================
+====================== PORTFOLIO =================
+====================== PORTFOLIO =================*/
+.portfolio-buttons {
+  padding-bottom: 56px;
+  display: flex;
+  justify-content: center;
+}
+.portfolio-buttons li {
+  padding-right: 8px;
+}
+.portfolio-buttons button {
+  padding: 6px 22px 6px 22px;
+  border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
 
-    color: var(--body-background);
+  border-radius: 4px;
+
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.portfolio-buttons button:hover,
+.portfolio-buttons button:focus {
+  background-color: var(--webstudio-blue);
+  color: var(--main-white);
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.portfolio-box ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.tel-mail {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    font-style: normal;
-    color: rgba(255, 255, 255, 0.6);
+.portfolio-box li {
+  flex-basis: calc((100% - 90px) / 3);
+
+  box-sizing: border-box;
+  background: var(--main-white);
 }
-.tel-mail:hover,
-.tel-mail:focus {
-    color: var(--webstudio-blue);
+.portfolio-box p {
+  padding: 4px 24px 20px 24px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--gery-text);
 }
-
-/* =============== portfolio guziki ===============*/
-.main-section-portfolio ul {
-    padding-left: 215px;
-    padding-right: 215px;
-}
-.buttons-portfolio-type {
-    padding: 6px 22px 6px 22px;
-    border: none;
-    background: #f5f4fa;
-    border-radius: 4px;
-
-    border-radius: 4px;
-
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-
-    text-align: center;
-    letter-spacing: 0.03em;
-    cursor: pointer;
-}
-.buttons-portfolio-type:hover,
-.buttons-portfolio-type:focus {
-    background-color: var(--webstudio-blue);
-    color: var(--body-background);
-    cursor: pointer;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.buttons-portfolio {
-    padding-top: 94px;
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-.buttons-portfolio li { padding-right: 8px;
-}
-/* =============== portfolio główna sekcja ===============*/
-
-.portfolio-objects-box {
-    display: inline-block;
-    box-sizing: border-box;
-
-    background: var(--body-background);
-    border: 1px solid #eeeeee;
-}
-
-.prtf-box-text {
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--black-text);
-}
-
-.prtf-box-text-small {
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: var(--gery-text);
+.portfolio-box figcaption {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
