@@ -39,6 +39,7 @@ ol {
 /* ====================== NAGŁÓWKI ================= */
 
 h1 {
+    max-width: 700px;
     text-align: center;
     font-weight: 900;
     font-size: 44px;
