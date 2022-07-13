@@ -35,18 +35,10 @@ ol {
 .padding-bottom {
     padding-bottom: 94px;
 }
-.slogan-paddings {
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 /* ====================== NAGŁÓWKI ================= */
 
 h1 {
-    max-width: 700px;
     text-align: center;
     font-weight: 900;
     font-size: 44px;
@@ -127,22 +119,26 @@ h5 {
     border-bottom: 1px solid #ececec;
 }
 .header-bar {
-    height: 80px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 
     display: flex;
     justify-content: space-between;
 }
 .head-clickers {
     display: flex;
-    gap: 30px;
 }
 .head-clickers a {
+    padding-left: 23px;
+    padding-right: 23px;
     color: var(--black-text);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+address a:hover,
+address a:focus,
 .head-clickers a:hover,
 .head-clickers a:focus,
 .mail-tel a:hover,
@@ -151,10 +147,11 @@ h5 {
 }
 .mail-tel {
     display: flex;
-    gap: 30px;
     align-items: center;
 }
 .mail-tel a {
+    padding-left: 25px;
+    padding-right: 25px;
     color: var(--gery-text);
     font-weight: 500;
     font-size: 14px;
@@ -164,13 +161,12 @@ h5 {
 
 /* ====================== SLOGAN ================= */
 .slogan {
-    height: 600px;
+    padding: 200px 452px 30px 452px;
     background: var(--slogan-background);
     display: flex;
     align-items: center;
 }
 .slogan-paddings {
-    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,9 +174,9 @@ h5 {
 }
 
 .main-button {
-    width: 200px;
-    height: 50px;
+    padding: 10px 41px 10px 41px;
     margin-top: 30px;
+    margin-bottom: 200px;
     border: none;
 
     background: var(--webstudio-blue);
@@ -200,7 +196,10 @@ h5 {
 /* ====================== LOREM IPSUM ================= */
 .lorem-ipsum-section ul {
     display: flex;
-    gap: 30px;
+}
+.lorem-ipsum-section li {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .lorem-ipsum-section h6 {
     padding-bottom: 10px;
@@ -277,10 +276,7 @@ address a {
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
 }
-address a:hover,
-address a:focus {
-    color: var(--webstudio-blue);
-}
+
 .address-padding {
     padding-top: 9px;
 }
@@ -325,9 +321,10 @@ address a:focus {
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-box ul {
+    justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    row-gap: 30px;
 }
 
 .portfolio-box li {
