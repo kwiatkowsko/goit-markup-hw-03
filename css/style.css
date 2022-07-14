@@ -20,6 +20,7 @@ a {
 }
 
 .container {
+    box-sizing: border-box;
     width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
@@ -222,12 +223,11 @@ address a:focus,
 .what-we-do li {
     display: inline-block;
 }
-.what-we-do li:not(:last-child) {
-    padding-right: 15px;
+.photos {
+    display: flex;
+    justify-content: space-around;
 }
-.what-we-do li {
-    padding-left: 15px;
-}
+
 /* ====================== LUDZIE ================= */
 .our-team {
     background-color: var(--grey-background);
