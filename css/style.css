@@ -22,6 +22,8 @@ a {
 .container {
     width: 1200px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 ul,
 ol {
@@ -197,11 +199,9 @@ address a:focus,
 /* ====================== LOREM IPSUM ================= */
 .lorem-ipsum-section ul {
     display: flex;
+    gap: 30px;
 }
-.lorem-ipsum-section li {
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 .lorem-ipsum-section h6 {
     padding-bottom: 10px;
     font-weight: 700;
