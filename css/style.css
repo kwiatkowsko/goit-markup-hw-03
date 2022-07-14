@@ -225,7 +225,7 @@ address a:focus,
 }
 .photos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 /* ====================== LUDZIE ================= */
@@ -234,7 +234,7 @@ address a:focus,
 }
 .people {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .people-box {
     display: inline-block;
