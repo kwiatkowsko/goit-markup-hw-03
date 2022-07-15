@@ -131,13 +131,17 @@ h5 {
 .head-clickers {
     display: flex;
 }
-.head-clickers a {
-    padding-left: 23px;
+.head-clickers li:not(:last-child) {
     padding-right: 23px;
+}
+.head-clickers li:not(:first-child) {
+    padding-left: 23px;
+}
+.head-clickers a {
     color: var(--black-text);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.142;
     letter-spacing: 0.02em;
 }
 address a:hover,
@@ -151,16 +155,18 @@ address a:focus,
 .mail-tel {
     display: flex;
     align-items: center;
+
 }
 .mail-tel a {
-    padding-left: 25px;
     padding-right: 25px;
+    padding-left: 25px;
     color: var(--gery-text);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
 
 /* ====================== SLOGAN ================= */
 .slogan {
