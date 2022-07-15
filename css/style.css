@@ -261,7 +261,8 @@ address a:focus,
 address p {
     font-style: normal;
     font-size: 14px;
-    line-height: 2;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
 
     color: var(--main-white);
 }
@@ -271,7 +272,7 @@ address ul {
 address a {
     text-decoration: none;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.714;
     letter-spacing: 0.03em;
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
@@ -290,7 +291,7 @@ address a {
 ====================== PORTFOLIO =================
 ====================== PORTFOLIO =================*/
 .portfolio-buttons {
-    padding-bottom: 56px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
 }
