@@ -337,8 +337,6 @@ address a {
 
 .portfolio-box li {
     flex-basis: calc((100% - 90px) / 3);
-
-    box-sizing: border-box;
     background: var(--main-white);
 }
 .portfolio-box p {
