@@ -152,10 +152,9 @@ address a:focus,
 .mail-tel a:focus {
     color: var(--webstudio-blue);
 }
-.header-bar ul {
-    padding-right: 12px;
-}
+
 .mail-tel {
+    padding-right: 12px;
     display: flex;
     align-items: center;
 }
